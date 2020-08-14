@@ -79,11 +79,11 @@
                 let dadosJSONObj = JSON.parse(dadosJSONText)
                 for (let i = 0; i < dadosJSONObj.length; i++) {
                     bloco.innerHTML +=
-                        "<div><tr>" + dadosJSONObj[i].name +
-                        "</tr><td><br>" + dadosJSONObj[i].language +
-                        "</td><br><td><button onclick='cloneurl(" + dadosJSONObj[i].clone_url + ")'>Link" +
-                        "</button><td><button onclick= 'cloneclone(" + dadosJSONObj[i].html_url + ")'>Clone" +
-                        "</button></div></td><br><br>"
+                  "<div><tr>" + dadosJSONObj[i].name +
+                  "</tr><td><br>" + dadosJSONObj[i].language +
+                  "</td><br><td><button onclick=\"cloneurl('" + dadosJSONObj[i].clone_url + "')\">Link" +
+                  "</button><td><button onclick=\"cloneclone('" + dadosJSONObj[i].html_url + "')\">Clone" +
+                  "</button></div></td><br><br>"
                 }
             }
         }
